@@ -1,3 +1,4 @@
+local Material = {}
 local Player = game:GetService("Players").LocalPlayer
 local Mouse = Player:GetMouse()
 
@@ -7,6 +8,8 @@ local RunService = game:GetService("RunService")
 local InputService = game:GetService("UserInputService")
 local CoreGuiService = game:GetService("CoreGui")
 local ContentService = game:GetService("ContentProvider")
+
+ScreenGui.Name = LibName
 
 local Themes = {
 	Light = {
@@ -556,6 +559,14 @@ local NavBar = {
 }
 
 local MainGUI
+
+function Material:ToggleUI()
+    if game.CoreGui[LibName].Enabled then
+        game.CoreGui[LibName].Enabled = false
+    else
+        game.CoreGui[LibName].Enabled = true
+    end
+end
 
 function TryAddMenu(Object, Menu, ReturnTable)
 	local Menu = Menu
