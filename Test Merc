@@ -432,10 +432,10 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "Dog shit",
+		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "Deez nut"
+		Link = "Running"
 	}, options)
 	
 	if getgenv and getgenv().MercuryUI then
@@ -658,7 +658,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "Status | Injected | Edited By shakemyhand1010",
+		Text = "Status | Injected |",
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -789,7 +789,7 @@ function Library:create(options)
 	end
 
 	local profileName = profile:object("TextLabel", {
-		Text = "@" .. LocalPlayer.Name,
+		Text = "*" .. LocalPlayer.Name,
 		TextScaled = true,
 		Position = UDim2.new(0, 105,0, 47),
 		Theme = {TextColor3 = "Tertiary"},
