@@ -3189,7 +3189,7 @@ end
 
 function Library:slider(options)
 	options = self:set_defaults({
-		Name = "SUS Slider",
+		Name = "SUS_Slider",
 		Default = 16,
 		Min = 16,
 		Max = 500,
