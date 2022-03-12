@@ -3189,7 +3189,7 @@ end
 
 function Library:slider(options)
 	options = self:set_defaults({
-		Name = "SUSSlider",
+		Name = "Walkspeed etc",
 		Default = 16,
 		Min = 16,
 		Max = 500,
