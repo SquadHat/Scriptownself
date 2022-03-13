@@ -17,6 +17,12 @@ local tab1 = gui:tab{
 
 }
 
+local tab2 = gui:tab{
+    Icon = "rbxassetid://8992042585",
+    Name = "Game Teleport"
+
+}
+
 ---[ TAB 1 ] ---
 
 tab1:button({
@@ -88,5 +94,31 @@ tab:button({
     Description = "Admin Commands Script",
     Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+end
+})
+
+--- [ TAB 2 ] ---
+
+tab2:button({
+    Name = "Empty Baseplate",
+    Description = "Baseplate",
+    Callback = function()
+game:GetService("TeleportService"):Teleport(4951068818, LocalPlayer)
+end
+})
+
+tab2:button({
+    Name = "Decaying Winter",
+    Description = "basically a survival game",
+    Callback = function()
+game:GetService("TeleportService"):Teleport(7551121821, LocalPlayer)
+end
+})
+
+tab2:button({
+    Name = "Funky Friday",
+    Description = "Rhythm game",
+    Callback = function()
+game:GetService("TeleportService"):Teleport(6447798030, LocalPlayer)
 end
 })
