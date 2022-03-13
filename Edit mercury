@@ -1,0 +1,92 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SquadHat/Scriptownself/main/Test%20Merc"))()
+
+local gui = Library:create{
+    Theme = Library.Themes.Dark
+
+}
+
+local tab = gui:tab{
+    Icon = "rbxassetid://8992030918",
+    Name = "Script Hub"
+
+}
+
+local tab1 = gui:tab{
+    Icon = "rbxassetid://8992042471",
+    Name = "Game Hub"
+
+}
+
+---[ TAB 1 ] ---
+
+tab1:button({
+    Name = "Decaying Winter",
+    Description = "Decaying Winter Script",
+    Callback = function()
+    gui:prompt(f)
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aidez/decaying_winter/main/GOODWILL_COMMAND_SCRIPT'),true))()
+end
+})
+tab1:button({
+    Name = "[DW] INF EXP",
+    Description = "Gave you exp",
+    Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aidez/decaying_winter/main/GOODWILL_COMMAND_SCRIPT'),true))()
+end
+})
+tab1:button({
+    Name = "Funky Friday",
+    Description = "Auto Player",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+end
+})
+--- [ TAB ] ---
+
+tab:button({
+    Name = "Walkspeed",
+    Description = "Change ur Legs",
+    Callback = function()
+end
+})
+local cum = tab:slider({Callback = function(v)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end})
+tab:button({
+    Name = "Jumppower",
+    Description = "Legs boost",
+    Callback = function()
+end
+})
+local cum = tab:slider({Callback = function(v)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end})
+
+tab:button({
+    Name = "Emoji",
+    Description = "Emoji Chat",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SquadHat/Scriptownself/main/Emoji"))()
+end
+})
+tab:button({
+    Name = "Dark Dex",
+    Description = "Dev Script",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceSpiffer/Scripts/main/Script4", true))()
+end
+})
+tab:button({
+    Name = "Remote Spy",
+    Description = "Remote Script",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/specowos/scriptsforvideos1/main/r2s.lua", true))()
+end
+})
+tab:button({
+    Name = "Infinite Yield",
+    Description = "Admin Commands Script",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+end
+})
