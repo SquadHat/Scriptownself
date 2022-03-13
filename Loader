@@ -3,7 +3,7 @@ game.StarterGui:SetCore("SendNotification", {
 Title = "Loaded!";
 Text = "Type '/e deeznut' in chat For GUI";
 Icon = "rbxassetid://8992042585";
-Duration = 4;
+Duration = 7;
 })
 
 game.Players.LocalPlayer.Chatted:connect(function(msg)
